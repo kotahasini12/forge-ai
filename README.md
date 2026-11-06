@@ -1,4 +1,9 @@
 # FORGE AI — Fitness, built around you
+## 🚀 Live Demo
+
+🌐 **[Click Here to Open FORGE AI](https://forge-ai-frontend-f6oh.onrender.com)**
+
+**Status:** Live and Deployed ✅
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kotahasini12/forge-ai)
 
