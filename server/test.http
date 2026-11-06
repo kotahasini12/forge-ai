@@ -1,0 +1,38 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@forgeai.com",
+  "password": "ForgeTest123",
+  "fitnessGoal": "Muscle Gain",
+  "experience": "Beginner"
+}
+### Login User
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@forgeai.com",
+  "password": "ForgeTest123"
+}
+
+### Get My Profile
+GET http://localhost:5000/api/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWVkYjk3ZTIyYjJhMGZkNzM3OWQ1ZTUiLCJpYXQiOjE3OTM5NjgzNTQsImV4cCI6MTc5NDU3MzE1NH0.1nYhBQ4Y3tI0dENTUxU1A5jyhnKN2KQUPcz0RnhHeYU
+### Save Workout
+POST http://localhost:5000/api/workouts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWVkYjk3ZTIyYjJhMGZkNzM3OWQ1ZTUiLCJpYXQiOjE3OTM5Njg5MDAsImV4cCI6MTc5NDU3MzcwMH0.CAcvxmZYMIZA9symNLSJSZKvXxMZ_maMoJICyvM9e3U
+Content-Type: application/json
+
+{
+  "exerciseName": "Push Ups",
+  "muscleGroup": "Chest",
+  "sets": 3,
+  "reps": 12,
+  "duration": 300,
+  "weight": 0
+}
+### Get Workout History
+GET http://localhost:5000/api/workouts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWVkYjk3ZTIyYjJhMGZkNzM3OWQ1ZTUiLCJpYXQiOjE3OTM5Njg5NzYsImV4cCI6MTc5NDU3Mzc3Nn0.51ZIHJEN81xOLtWwIljCGKmPNT5dCn_4WVEzJQcR8r4
