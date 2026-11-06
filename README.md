@@ -1,5 +1,7 @@
 # FORGE AI — Fitness, built around you
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kotahasini12/forge-ai)
+
 A local-first fitness coaching web app starter built with React + Vite and Express.
 This first milestone includes a searchable exercise library, muscle-group filters,
 difficulty/equipment filters, exercise details, and a guided workout timer.
