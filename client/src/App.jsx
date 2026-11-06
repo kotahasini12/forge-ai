@@ -1,6 +1,7 @@
 import Login from "./Login";
 import Register from "./Register";
 import { useEffect, useMemo, useState } from "react";
+import { API_BASE_URL } from "./config";
 import {
   Activity, ArrowRight, Check, ChevronDown, Clock3, Dumbbell, Flame,
   Play, Search, Sparkles, Target, X, CalendarDays, ChartNoAxesCombined,
@@ -208,7 +209,7 @@ function App() {
         throw new Error("Please login again.");
       }
 
-      const response = await fetch("http://localhost:5000/api/workouts", {
+      const response = await fetch(`${API_BASE_URL}/api/workouts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
